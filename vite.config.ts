@@ -6,7 +6,7 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: process.env.GITHUB_PAGES ? '/react-example/' : '/',
+    base: process.env.GITHUB_PAGES ? '/-/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
